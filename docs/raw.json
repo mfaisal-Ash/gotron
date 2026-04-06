@@ -1,0 +1,273 @@
+{
+    "best-products": [
+        {
+            "id": 1,
+            "kode": "BP001",
+            "nama": "Wireless Headphones",
+            "harga": 99.99,
+            "peringkat": 4.5,
+            "is_ready": true,
+            "gambar": "headphones.png"
+        },
+        {
+            "id": 2,
+            "kode": "BP002",
+            "nama": "Smart Watch",
+            "harga": 199.99,
+            "peringkat": 4.7,
+            "is_ready": false,
+            "gambar": "smartwatch.jpg"
+        },
+        {
+            "id": 3,
+            "kode": "BP003",
+            "nama": "Bluetooth Speaker",
+            "harga": 49.99,
+            "peringkat": 4.3,
+            "is_ready": true,
+            "gambar": "speaker.png"
+        }
+    ],
+    "new-arrivals": [
+        {
+            "id": 4,
+            "kode": "NA001",
+            "nama": "Fitness Tracker",
+            "harga": 59.99,
+            "peringkat": 4.2,
+            "is_ready": true,
+            "gambar": "fitnesstracker.png"
+        },
+        {
+            "id": 5,
+            "kode": "NA002",
+            "nama": "4K Action Camera",
+            "harga": 149.99,
+            "peringkat": 4.6,
+            "is_ready": true,
+            "gambar": "actioncamera.jpg"
+        },
+        {
+            "id": 6,
+            "kode": "NA003",
+            "nama": "Noise Cancelling Earbuds",
+            "harga": 129.99,
+            "peringkat": 4.4,
+            "is_ready": false,
+            "gambar": "earbuds.png"
+        }
+    ],
+    "on-sale": [
+        {
+            "id": 7,
+            "kode": "OS001",
+            "nama": "Gaming Mouse",
+            "harga": 39.99,
+            "peringkat": 4.1,
+            "is_ready": true,
+            "gambar": "gamingmouse.jpg"
+        },
+        {
+            "id": 8,
+            "kode": "OS002",    
+            "nama": "Mechanical Keyboard",
+            "harga": 89.99,
+            "peringkat": 4.5,
+            "is_ready": true,
+            "gambar": "keyboard.jpg"
+        },
+        {
+            "id": 9,
+            "kode": "OS003",    
+            "nama": "HD Webcam",
+            "harga": 69.99,
+            "peringkat": 4.0,
+            "is_ready": false,
+            "gambar": "webcam.jpg"
+        }
+    ],
+    "products": [
+        {
+            "id": 1,
+            "kode": "P001",
+            "nama": "Wireless Headphones",
+            "harga": 99.99,
+            "peringkat": 4.5,
+            "is_ready": true,
+            "gambar": "headphones.png"
+        },
+        {
+            "id": 2,
+            "kode": "P002",
+            "nama": "Smart Watch",
+            "harga": 199.99,
+            "peringkat": 4.7,
+            "is_ready": false,
+            "gambar": "smartwatch.jpg"
+        },
+        {
+            "id": 3,
+            "kode": "P003",
+            "nama": "Bluetooth Speaker",
+            "harga": 49.99,
+            "peringkat": 4.3,
+            "is_ready": true,
+            "gambar": "speaker.png"
+        },
+        {
+            "id": 4,
+            "kode": "P004",
+            "nama": "Fitness Tracker",
+            "harga": 59.99,
+            "peringkat": 4.2,
+            "is_ready": true,
+            "gambar": "fitnesstracker.png"
+        },
+        {
+            "id": 5,
+            "kode": "P005",
+            "nama": "4K Action Camera",
+            "harga": 149.99,
+            "peringkat": 4.6,
+            "is_ready": true,
+            "gambar": "actioncamera.jpg"
+        },
+        {
+            "id": 6,
+            "kode": "P006",
+            "nama": "Noise Cancelling Earbuds",
+            "harga": 129.99,
+            "peringkat": 4.4,
+            "is_ready": false,
+            "gambar": "earbuds.png"
+        },
+        {
+            "id": 7,
+            "kode": "P007",
+            "nama": "Gaming Mouse",
+            "harga": 39.99,
+            "peringkat": 4.1,
+            "is_ready": true,
+            "gambar": "gamingmouse.jpg"
+        },
+        {
+            "id": 8,
+            "kode": "P008",
+            "nama": "Mechanical Keyboard",
+            "harga": 89.99,
+            "peringkat": 4.5,
+            "is_ready": true,
+            "gambar": "keyboard.jpg"
+        },
+        {
+            "id": 9,
+            "kode": "P009",
+            "nama": "HD Webcam",
+            "harga": 69.99,
+            "peringkat": 4.0,
+            "is_ready": false,
+            "gambar": "webcam.jpg"
+        },
+        {
+            "id": 10,
+            "kode": "P010",
+            "nama": "Portable Charger",
+            "harga": 29.99,
+            "peringkat": 4.3,
+            "is_ready": true,
+            "gambar": "charger.jpg"
+        },
+        {
+            "id": 11,
+            "kode": "P011",
+            "nama": "Smartphone Gimbal",
+            "harga": 119.99,
+            "peringkat": 4.4,
+            "is_ready": true,
+            "gambar": "gimbal.jpg"
+        },
+        {
+            "id": 12,
+            "kode": "P012",
+            "nama": "VR Headset",
+            "harga": 299.99,
+            "peringkat": 4.6,
+            "is_ready": false,
+            "gambar": "vrheadset.jpg"
+        },
+        {
+            "id": 13,
+            "kode": "P013",
+            "nama": "Digital Photo Frame",
+            "harga": 79.99,
+            "peringkat": 4.2,
+            "is_ready": true,
+            "gambar": "photoframe.jpg"
+        },
+        {
+            "id": 14,
+            "kode": "P014",
+            "nama": "Smart Home Hub",
+            "harga": 129.99,
+            "peringkat": 4.5,
+            "is_ready": true,
+            "gambar": "smarthub.png"
+        },
+        {
+            "id": 15,
+            "kode": "P015",
+            "nama": "E-Reader",
+            "harga": 89.99,
+            "peringkat": 4.4,
+            "is_ready": false,
+            "gambar": "ereader.png"
+        },
+        {
+            "id": 16,
+            "kode": "P016",
+            "nama": "Action Figure",
+            "harga": 159.99,
+            "peringkat": 4.3,
+            "is_ready": true,
+            "gambar": "figure.jpg"
+        },
+        {
+            "id": 17,
+            "kode": "P017",
+            "nama": "Smart Light Bulb",
+            "harga": 19.99,
+            "peringkat": 4.1,
+            "is_ready": true,
+            "gambar": "lightbulb.jpg"
+        },
+        {
+            "id": 18,
+            "kode": "P018",
+            "nama": "Wireless Charging Pad",
+            "harga": 39.99,
+            "peringkat": 4.2,
+            "is_ready": false,
+            "gambar": "chargingpad.jpg"
+        },
+        {
+            "id": 19,
+            "kode": "P019",
+            "nama": "Laptop Stand",
+            "harga": 49.99,
+            "peringkat": 4.3,
+            "is_ready": true,
+            "gambar": "laptopstand.jpg"
+        },
+        {
+            "id": 20,
+            "kode": "P020",
+            "nama": "USB-C Hub",
+            "harga": 59.99,
+            "peringkat": 4.4,
+            "is_ready": true,
+            "gambar": "usbc_hub.jpg"
+        }
+    ],
+    "keranjang": [],
+    "pesanan": []
+}

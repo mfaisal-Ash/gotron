@@ -12,9 +12,9 @@ type LoginRequest struct {
 }
 
 type AuthResponse struct {
-	User UserResponse `json:"user"`
-	AccessToken string       `json:"access
-	ExpiresIn int          `json:"expires_in"`
+	User        UserResponse `json:"user"`
+	AccessToken string       `json:"access_token"`
+	ExpiresIn   int          `json:"expires_in"`
 }
 
 type UserResponse struct {
@@ -23,4 +23,3 @@ type UserResponse struct {
 	Email    string `json:"email"`
 	Role     string `json:"role"`
 }
-

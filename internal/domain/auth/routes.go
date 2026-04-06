@@ -1,8 +1,12 @@
 package auth
 
 import (
-	"diotron/internal/middleware"
+	"gotron/internal/middleware"
+	"net/http"
+
 	"github.com/gin-gonic/gin"
+	"github.com/golang-jwt/jwt/v5"
+	"github.com/mfaisal-Ash/gotron/internal/common"
 )
 
 func RegisterRoutes(router *gin.Engine, handler *Handler, authMiddleware *middleware.AuthMiddleware) {
@@ -11,7 +15,7 @@ func RegisterRoutes(router *gin.Engine, handler *Handler, authMiddleware *middle
 		authGroup.POST("/register", handler.Register)
 		authGroup.POST("/login", handler.Login)
 		authGroup.POST("/refresh", handler.RefreshToken)
-	}	
+	}
 }
 
 func RegisterProtectedRoutes(router *gin.Engine, handler *Handler, authMiddleware *middleware.AuthMiddleware) {
@@ -30,7 +34,5 @@ func (h *Handler) Profile(c *gin.Context) {
 		common.JSONErrorResponse(c, http.StatusNotFound, err.Error(), nil)
 		return
 	}
-	common.JSONSuccessResponse(c, resp)
+	common.JSONSuccessResponse(c, http.StatusOK, "Profile retrieved successfully", resp, nil)
 }
-
-

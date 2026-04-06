@@ -19,17 +19,17 @@ func NewInMemoryRepository() *InMemoryRepository {
 }
 
 func (r *InMemoryRepository) Create(user *User) error {
-	for _, u := range r.users {
+	for _, u := range r.Users {
 		if u.Email == user.Email {
 			return errors.New("email already registered")
 		}
 	}
-	r.users = append(r.users, user)
+	r.Users[user.ID] = user
 	return nil
 }
 
 func (r *InMemoryRepository) FindByEmail(email string) (*User, error) {
-	for _, u := range r.users {
+	for _, u := range r.Users {
 		if u.Email == email {
 			return u, nil
 		}
@@ -38,10 +38,8 @@ func (r *InMemoryRepository) FindByEmail(email string) (*User, error) {
 }
 
 func (r *InMemoryRepository) FindByID(id string) (*User, error) {
-	for _, u := range r.users {
-		if u.ID == id {
-			return u, nil
-		}
+	if u, exists := r.Users[id]; exists {
+		return u, nil
 	}
 	return nil, errors.New("user not found")
 }

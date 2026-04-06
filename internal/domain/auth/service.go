@@ -10,13 +10,13 @@ import (
 )
 
 type service struct {
-	repo Repository
+	repo      Repository
 	JWTSecret string
 }
 
 func NewService(repo Repository, secret string, tokenHours int) *service {
 	return &service{
-		repo: repo,
+		repo:      repo,
 		JWTSecret: secret,
 	}
 }
@@ -64,7 +64,7 @@ func (s *service) Login(req LoginRequest) (*AuthResponse, error) {
 	if req.Email == "" || req.Password == "" {
 		return nil, errors.New("email and password are required")
 	}
-	
+
 	user, err := s.repo.FindByEmail(req.Email)
 	if err != nil {
 		return nil, errors.New("invalid email or password")
@@ -108,11 +108,11 @@ func (s *service) Me(userID string) (*UserResponse, error) {
 func (s *service) generateToken(user *User) (string, int64, error) {
 	expiresIn := time.Now().Add(24 * time.Hour).Unix()
 	claims := jwt.MapClaims{
-		"user_id": user.ID,
+		"user_id":   user.ID,
 		"full_name": user.FullName,
-		"email": user.Email,
-		"role": user.Role,
-		"exp": expiresIn,
+		"email":     user.Email,
+		"role":      user.Role,
+		"exp":       expiresIn,
 	}
 
 	token := jwt.NewWithClaims(jwt.SigningMethodHS256, claims)
@@ -123,4 +123,3 @@ func (s *service) generateToken(user *User) (string, int64, error) {
 
 	return tokString, expiresIn, nil
 }
-
